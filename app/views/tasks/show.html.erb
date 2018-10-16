@@ -1,0 +1,9 @@
+<h1>Task</h1>
+
+<div class="task">
+  <h4 class="title"><%= @task.title%></h4>
+  <p class="detail"><%= @task.details%></p>
+  <p class="emoji"><%= @task.completed ? "✔️" : "⚪️" %></p>
+</div>
+<%= link_to "Edit this task", edit_path(@task.id) %>
+

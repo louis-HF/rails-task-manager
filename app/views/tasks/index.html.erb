@@ -1,0 +1,12 @@
+<h1>Tasks</h1>
+<ul>
+  <% @tasks.each do |task| %>
+  <div class="task">
+    <p class="emoji"><%= task.completed ? "✔️" : "⚪️" %></p>
+    <%= link_to task.title, task_path(task.id) %>
+    <%= link_to "🗑️", task_path(task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+  </div>
+  <% end %>
+</ul>

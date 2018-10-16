@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  margin: 5px;
+}
+
+.detail {
+  margin: 5px;
+}
+
+.emoji {
+  margin: 5px;
+}
